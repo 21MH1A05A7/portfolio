@@ -10,8 +10,6 @@ const Header = () => {
 
   const scrollPosition = useScrollPosition();
 
-
-
   const scrollToPosition = (val) => {
     // Replace 'x' and 'y' with the coordinates you want to scroll to
     window.scrollTo({
@@ -22,7 +20,7 @@ const Header = () => {
   };  
 
   return (
-    <Disclosure className={`w-full p-1 sticky transition ease-in-out duration-300 relative ${
+    <Disclosure className={`sticky w-full p-1  transition ease-in-out duration-300 ${
       scrollPosition>0 ? "drop-shadow-lg":"drop-shadow-none"
     }`}>
          {({open}) =>(
@@ -57,26 +55,26 @@ const Header = () => {
                   leaveFrom="transform opacity-100 scale-100"
                   leaveTo="transform opacity-0 scale-95"
                   >
-                   <Disclosure.Panel className="sm:hidden px-2">
-                   <Disclosure.Button
-                  className='w-full shadow-sm hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'>
+                   <Disclosure.Panel className="sm:hidden px-2 text-center">
+                   <a onClick={()=>{scrollToPosition(0)}}
+                  className='w-full shadow-sm hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium' >
                   Home
-                </Disclosure.Button>
-                <Disclosure.Button
-                  className='w-full shadow-sm hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'>
+                </a>
+                <a onClick={()=>{scrollToPosition(2500)}}
+                  className='w-full shadow-sm hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium' >
                   About
-                </Disclosure.Button>
-                <Disclosure.Button
+                </a>
+                <a onClick={()=>{scrollToPosition(900)}}
                   className=
                     'w-full shadow-sm hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'>
                         Projects
-                </Disclosure.Button>
+                </a>
 
-                <Disclosure.Button
+                <a onClick={()=>{scrollToPosition(5000)}}
                   className=
                     'w-full shadow-sm hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'>
                         Contact
-                </Disclosure.Button>
+                </a>
                     </Disclosure.Panel> 
                   </Transition>
     </div>

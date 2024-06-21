@@ -5,9 +5,23 @@ import linkdin from '../linkdin.png';
 import leetcode from '../leetcode.png';
 import github from '../github.png';
 import gfg from '../gfg.png';
+import { useScrollPosition } from '../hooks/useScrollPosition';
 
 
 const Intro = () => {
+
+  const scrollPosition=useScrollPosition();
+  const scrollToPosition = (val) => {
+    // Replace 'x' and 'y' with the coordinates you want to scroll to
+    window.scrollTo({
+      top: val, // specify the y-coordinate
+      left: 0, // specify the x-coordinate
+      behavior: 'smooth' // smooth scrolling
+    });
+  }; 
+
+
+
   return (
     <div className='relative py-2 sm:py-0 h-fit sm:h-[700px] max-w-8xl mt-4'>
       <div className='rounded-xl relative h-full px-2 max-w-[1300px] mx-auto'>
@@ -49,8 +63,8 @@ const Intro = () => {
       
       <div className='block mt-4 lg:hidden xl:block xl:mt-2 xl:absolute xl:top-[510px] sm:w-[440px] xl:right-0 pb-2'>
         <h1 className='mb-4'>Constantly updating my skills, I stay ahead of industry trends to exceed client expectations. I bring a comprehensive approach to every project, ensuring seamless integration</h1>
-        <button className='ml-4 p-3 rounded-3xl text-white bg-[#FF5F00] font-semibold'>Know about me</button>
-        <button className='ml-2 p-3 rounded-3xl font-semibold border border-1 border-black'>Repositories</button>
+        <button className='ml-4 p-3 rounded-3xl text-white bg-[#FF5F00] font-semibold' onClick={()=>{scrollToPosition(2200)}}>Know about me</button>
+        <a href="https://github.com/21MH1A05A7"><button className='ml-2 p-3 rounded-3xl font-semibold border border-1 border-black'>Repositories</button></a>
       </div>
 
       </div>

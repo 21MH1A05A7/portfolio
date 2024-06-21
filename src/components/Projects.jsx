@@ -8,6 +8,7 @@ import tailwind from '../tailwind.png';
 import node from '../node.png';
 import monogo from '../mongodb.png';
 const Project = () => {
+
   return (
     <>
     <div className='mx-auto max-w-7xl w-screen lg:h-[700px] sm:h-fit mt-28 rounded-2xl p-6 shadow-[rgba(0,0,0,0.1)_0px_4px_12px] dark:shadow-[rgba(0,0,0,0.5)_0px_4px_12px]'>
