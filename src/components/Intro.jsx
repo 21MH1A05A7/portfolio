@@ -23,7 +23,7 @@ const Intro = () => {
 
 
   return (
-    <div className='relative py-2 sm:py-0 h-fit sm:h-[700px] max-w-8xl mt-4'>
+    <div className='relative py-2 sm:py-0 h-fit sm:h-[700px] max-w-8xl mt-4 md:overflow-hidden lg:overflow-none'>
       <div className='rounded-xl relative h-full px-2 max-w-[1300px] mx-auto'>
         <div className='relative w-fit  top-[100px] lg:absolute lg:top-44 lg:left-20'>
             <h1 className='text-5xl md:text-8xl font-sans font-medium tracking-[5px]'>Matuparthi Harshad Sai</h1>

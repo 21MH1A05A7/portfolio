@@ -12,9 +12,10 @@ const About = () => {
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl border-l-4 border-l-black pl-3">
               About Me
             </h1>
-            <p className="mt-4 text-xl text-gray-500">
-             My expertise spans both <span className='font-bold'>front-end</span> and <span className='font-bold'>back-end</span> development, allowing me to build comprehensive, full-stack applications. Outside of work, I enjoy watching anime and web series, and playing volleyball.
-            </p>
+            <p className="mt-8 text-lg text-gray-500 ml-4">
+            I am a versatile software developer with two years of experience creating innovative projects, utilizing cutting-edge technologies such as React JS, Node JS, Spring Boot, Express JS, and MongoDB.</p>
+            <p className="mt-4 text-lg text-gray-500 ml-4" >I have developed some astonishing webpages, showcasing my ability to integrate modern industrial technologies to deliver high-quality, user-friendly interfaces. My expertise spans both front-end and back-end development, allowing me to build comprehensive, full-stack applications. I am passionate about solving complex problems and continuously expanding my technical knowledge. </p>
+            <p className="mt-4 text-lg text-gray-500 ml-4">Outside of work, I enjoy watching anime and web series, and playing volleyball.</p>
           </div>
           <div>
             <div className="mt-10">

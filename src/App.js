@@ -8,7 +8,7 @@ import About from './components/About';
 import Footer from './components/Footer';
 function App() {
   return (
-    <div>
+    <div className='h-full'>
       <Header></Header>
       <Intro></Intro>
       <Project></Project>

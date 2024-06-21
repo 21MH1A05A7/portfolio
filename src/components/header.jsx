@@ -11,15 +11,20 @@ const Header = () => {
   const scrollPosition = useScrollPosition();
 
   const scrollToPosition = (val) => {
-    // Replace 'x' and 'y' with the coordinates you want to scroll to
+    
     window.scrollTo({
       top: val, // specify the y-coordinate
       left: 0, // specify the x-coordinate
       behavior: 'smooth' // smooth scrolling
     });
-  };  
+  };
+  
+  if(scrollPosition>0){
+    console.log("Hello");
+  }
 
   return (
+    
     <Disclosure className={`sticky w-full p-1  transition ease-in-out duration-300 ${
       scrollPosition>0 ? "drop-shadow-lg":"drop-shadow-none"
     }`}>
