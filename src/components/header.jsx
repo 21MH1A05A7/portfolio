@@ -24,12 +24,10 @@ const Header = () => {
   }
 
   return (
-    
-    <Disclosure className={`sticky w-full p-1  transition ease-in-out duration-300 ${
-      scrollPosition>0 ? "drop-shadow-lg":"drop-shadow-none"
-    }`}>
+    <>
+    <Disclosure as="nav" className={`${scrollPosition>0 ? "drop-shadow-lg":"drop-shadow-none"} relative sticky z-50 top-0 bg-white p-1 transition ease-in-out duration-300 `}>
          {({open}) =>(
-            <div className='shadow-lg'>
+            <div className='w-screen-full'>
     <div className='relative max-w-6xl mx-auto h-fit'>
         <div className='relative mx-auto flex flex-wrap justify-around sm:justify-between h-full'>
             <div className='realtive p-2 flex flex-1 text-center space-x-6'>
@@ -44,10 +42,10 @@ const Header = () => {
             </Disclosure.Button>
             <div className='hidden sm:flex space-x-10 md:space-x-20 p-2'>
                 <div className='flex flex-wrap space-x-10 lg:space-x-20 items-center'>
-                <a  class="nav" className='nav text-start text-md font-medium' onClick={()=>{scrollToPosition(0)}}>Home</a>
-                <a class="nav" className='nav text-start text-md font-medium h-fit' onClick={()=>{scrollToPosition(800)}}>Projects</a>
-                <a class="nav" className='nav text-center text-md font-medium h-fit' onClick={()=>{scrollToPosition(1400)}}>Tskills</a>
-                <a  class="nav" className='nav text-center text-md font-medium h-fit' onClick={()=>{scrollToPosition(2400)}}>Contact</a>
+                <a  class="nav" className='nav text-start text-md font-medium cursor-pointer' onClick={()=>{scrollToPosition(0)}}>Home</a>
+                <a class="nav" className='nav text-start text-md font-medium h-fit cursor-pointer' onClick={()=>{scrollToPosition(800)}}>Projects</a>
+                <a class="nav" className='nav text-center text-md font-medium h-fit cursor-pointer' onClick={()=>{scrollToPosition(1400)}}>Tskills</a>
+                <a  class="nav" className='nav text-center text-md font-medium h-fit cursor-pointer' onClick={()=>{scrollToPosition(2400)}}>Contact</a>
                 </div>
             </div>
         </div>
@@ -85,6 +83,7 @@ const Header = () => {
     </div>
          )}
     </Disclosure>
+    </>
   )
 }
 
