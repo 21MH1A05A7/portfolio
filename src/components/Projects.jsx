@@ -55,7 +55,7 @@ const Project = () => {
             </div>
 
             <div className='flex items-center space-x-2'>
-                <a href="https://github.com/21MH1A05A7/Diary-Management"><button className='relative p-2 px-4 rounded-lg pl-10 border border-black'>Code</button></a>
+                <a href="https://github.com/21MH1A05A7/garage"><button className='relative p-2 px-4 rounded-lg pl-10 border border-black'>Code</button></a>
                 <img src={github} alt="" className='absolute w-[30px] h-[30px]'/>
                 <button className='p-2 px-4 rounded-3xl bg-black text-white'>Know About</button>
             </div>
