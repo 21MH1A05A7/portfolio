@@ -14,9 +14,9 @@ const Project = () => {
     <div className='mx-auto max-w-7xl w-screen lg:h-[700px] sm:h-fit mt-28 rounded-2xl p-6 shadow-[rgba(0,0,0,0.1)_0px_4px_12px] dark:shadow-[rgba(0,0,0,0.5)_0px_4px_12px]'>
         <h1 className='font-medium text-center text-4xl'>Projects</h1>
         <div className='flex flex-1 flex-wrap md:flex-nowrap mt-10s'>
-          <div className='md:w-[700px] lg:w-fit xl:ml-20 overflow-hidden border-4 border-[#eee] rounded-b-sm rounded-lg border-b-black border-b-4'>
-            <a href="" className='mx-auto block w-[400px] h-[250px] '>
-              <img src={project1} alt="" className='w-full h-full p-2  object-cover object-[center_top] hover:object-[center_bottom] transition-all ease-in-out duration-[10000ms]' />
+          <div className='w-full md:w-[700px] lg:w-fit xl:ml-20 overflow-hidden border-4 border-[#eee] rounded-b-sm rounded-lg border-b-black border-b-4'>
+            <a href="" className='mx-auto block sm:w-[400px] h-[250px] '>
+              <img src={project1} alt="" className='w-full h-full sm:pl-3  object-cover object-[center_top] hover:object-[center_bottom] transition-all ease-in-out duration-[10000ms]' />
             </a>
           </div>
           <div className='w-[600px] mt-10 ml-4 space-y-3'>
@@ -38,8 +38,8 @@ const Project = () => {
           
         </div>
         <div className='flex flex-1 flex-wrap sm:flex-row-reverse md:flex-nowrap mt-10 space-x-3'>
-        <div className='xl:mr-[120px] md:w-[700px] lg:w-fit overflow-hidden border-4 border-[#eee] rounded-b-sm rounded-lg border-b-black border-b-4'>
-            <a href="" className='mx-auto block w-[400px] h-[250px] '>
+        <div className='xl:mr-[120px] w-full md:w-[700px] lg:w-fit overflow-hidden border-4 border-[#eee] rounded-b-sm rounded-lg border-b-black border-b-4'>
+            <a href="" className='mx-auto block sm:w-[400px] h-[250px] '>
               <img src={garage} alt="" className='w-full h-full p-2  object-cover object-[center_top] hover:object-[center_bottom] transition-all ease-in-out duration-[10000ms]' />
             </a>
           </div>
