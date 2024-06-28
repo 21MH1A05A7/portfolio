@@ -16,7 +16,7 @@ const Project = () => {
         <div className='flex flex-1 flex-wrap md:flex-nowrap mt-10s'>
           <div className='w-full md:w-[700px] lg:w-fit xl:ml-20 overflow-hidden border-4 border-[#eee] rounded-b-sm rounded-lg border-b-black border-b-4'>
             <a href="" className='mx-auto block sm:w-[400px] h-[250px] '>
-              <img src={project1} alt="" className='w-full h-full sm:pl-3  object-cover object-[center_top] hover:object-[center_bottom] transition-all ease-in-out duration-[10000ms]' />
+              <img src={project1} alt="" className='w-full h-full pl-2 sm:pl-3  object-cover object-[center_top] hover:object-[center_bottom] transition-all ease-in-out duration-[10000ms]' />
             </a>
           </div>
           <div className='w-[600px] mt-10 ml-4 space-y-3'>
